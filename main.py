@@ -1,6 +1,7 @@
 import csv
 import json
-
+#icon dictionary for drwaio
+icons= {'router':'mxgraph.cisco.routers.router','switch':'mxgraph.cisco.switches.workgroup_switch'}
 # some JSON:
 x = '{"devices":[{ "name":"John", "age":30, "city":"New York"},{ "name":"John", "age":30, "city":"New York"}]}'
 
