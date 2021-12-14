@@ -1,0 +1,33 @@
+
+
+devices = [
+	{'name': 'device_a',
+	 'ip_address': '10.0.0.1',
+	 'model': '3650',
+	 'level': 1,
+	 'interfaces': 
+		[
+		{'gig1/0/1': 'device_b', 'remote_port': 'Gig0/0/15', 'remote_device_model': '1001X', },
+		{'Ten0/0/0/4': 'device_c', 'remote_port': 'Fa1/15', 'remote_device_model': '4321', },
+		]
+	},
+	{'name': 'device_b',
+	 'ip_address': '10.0.0.1',
+	 'model': '3650',
+	 'level': 2,
+	 'interfaces': 
+		[
+		{'Gig0/0/15': 'device_a', 'remote_port': 'gig1/0/1', 'remote_device_model': '3650', },
+		{'Ten0/0/0/4': 'device_c', 'remote_port': 'Fa1/15', 'remote_device_model': '4321', },
+		]
+	},
+	{'name': '',
+	 'model': '',
+	 'level': 2,
+	 'interfaces': 
+		[
+		{'gig1/0/1': 'other device', 'remote_port': '', 'remote_device_model': '', },
+		{'gig1/0/2': 'other device', 'remote_port': '', 'remote_device_model': '', },
+		]
+	}
+]
