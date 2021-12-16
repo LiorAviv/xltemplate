@@ -1,0 +1,25 @@
+devices = [
+	{'name': 'device_a',
+	 'ip_address': '10.0.0.1',
+	 'model': '3650',
+	 'level': 1,
+	 'superior_to_ids':
+		["3","2"]
+	},
+	{'name': 'device_b',
+	 'ip_address': '10.0.0.1',
+	 'model': '3650',
+	 'level': 2,
+	 'superior_to_ids':
+		["3","2"]
+	},
+	{'name': '',
+	 'model': '',
+	 'level': 2,
+	 'interfaces':
+		[
+		{'gig1/0/1': 'other device', 'remote_port': '', 'remote_device_model': '', },
+		{'gig1/0/2': 'other device', 'remote_port': '', 'remote_device_model': '', },
+		]
+	}
+]

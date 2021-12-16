@@ -1,5 +1,3 @@
-
-
 devices = [
 	{'name': 'device_a',
 	 'ip_address': '10.0.0.1',
